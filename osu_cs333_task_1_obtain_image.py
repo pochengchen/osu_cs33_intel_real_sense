@@ -29,11 +29,11 @@ while(True):
     print(np.max(color_image))
 
     gray = cv2.cvtColor(color_image, cv2.COLOR_BGR2GRAY)
-    bgr555 = cv2.cvtColor(color_image, cv2.COLOR_RGB2Luv)
+    luv = cv2.cvtColor(color_image, cv2.COLOR_RGB2Luv)
 
     # images = np.hstack((bgr555, gray))
 
-    cv2.imshow('color_image', bgr555)
+    cv2.imshow('color_image', luv)
 
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
