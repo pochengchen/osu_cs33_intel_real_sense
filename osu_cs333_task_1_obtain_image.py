@@ -39,7 +39,7 @@ while(True):
         break
 
 print(np.size(gray))
-print(np.size(bgr555))
+print(np.size(luv))
 
 pipeline.stop()
 cv2.destroyAllWindows()
